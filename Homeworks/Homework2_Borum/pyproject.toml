@@ -1,0 +1,17 @@
+[project]
+name = "homework2-borum"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lailyn Borum", email = "lailyn.borum53@login.cuny.edu" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+homework2-borum = "homework2_borum:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
