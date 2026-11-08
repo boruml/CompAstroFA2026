@@ -1,9 +1,8 @@
-import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-## Includes the funtions simulate_photon and animate_photon. ##
+## Includes the functions simulate_photon and animate_photon. ##
 
 def simulate_photon(n_e, sigma, width, max_scatter, rng):
 
