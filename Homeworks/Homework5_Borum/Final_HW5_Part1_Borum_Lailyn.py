@@ -1,13 +1,18 @@
 import argparse
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
 import photon_functions as phf
+
+'''
+Need to have pillow installed:
+-- pip install pillow --
+
+'''
 
 def main():
 
     parser = argparse.ArgumentParser(
-        description="Monte Carlo simulation of a photon scattering through a stellar slab."
+        description="Monte Carlo simulation of a photon scattering through a stellar slab. Need pillow, "
+                    "numpy, matplotlib, and argparse installed"
     )
 
     parser.add_argument(
@@ -67,7 +72,7 @@ def main():
     if args.width <= 0 or args.max_scatter <= 0 or args.fps <= 0:
         parser.error("Width, max-scatter and fps must be positive.")
 
-    # Convert mean free path from cm to m.
+    # convert mean free path from cm to m
     mean_free_path = 1.0 / (args.density * args.sigma)
     mean_free_path /= 100.0
 
